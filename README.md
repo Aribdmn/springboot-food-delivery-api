@@ -29,6 +29,6 @@ Delivery API is a RESTful backend service built with **Spring Boot** designed to
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone [https://github.com/USERNAME/food-delivery.git](https://github.com/USERNAME/food-delivery.git)
-   cd food-delivery
+   git clone [https://github.com/USERNAME/food-delivery-api.git](https://github.com/USERNAME/food-delivery-api.git)
+   cd food-delivery-api
    ```
