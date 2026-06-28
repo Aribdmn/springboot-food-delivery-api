@@ -53,7 +53,7 @@ Delivery API is a RESTful backend service built with **Spring Boot** designed to
 
 4. The application will compile, run database migrations, and map to port `8080`. It is now ready to receive requests at `http://localhost:8080`.
 
-# API Endpoints (Postman Testing)
+## API Endpoints (Postman Testing)
 
 - GET `http://localhost:8080/api/v1/orders` - Fetches all order records.
 - GET `http://localhost:8080/api/v1/orders/analytics/revenue-by-category` - Fetches total revenue aggregated by menu category.
