@@ -1,5 +1,6 @@
 package com.pangan.delivery_api.service;
 
+import com.pangan.delivery_api.model.CategoryRevenueDTO;
 import com.pangan.delivery_api.model.FoodOrder;
 import com.pangan.delivery_api.repository.FoodOrderRepository;
 import org.springframework.stereotype.Service;
@@ -19,9 +20,13 @@ public class FoodOrderService {
         return foodOrderRepository.findAll();
     }
 
-    public List<FoodOrder> getFoodOrdersByStatus(String status) {
-        return foodOrderRepository.findByStatusPesanan(status);
+    public List<CategoryRevenueDTO> getRevenueByCategoryAnalytics() {
+        return foodOrderRepository.getRevenueByCategory();
     }
+
+    // public List<FoodOrder> getFoodOrdersByStatus(String status) {
+    //     return foodOrderRepository.findByStatusPesanan(status);
+    // }
 
     public FoodOrder createFoodOrder(FoodOrder order) {
         if (order.getIdPesanan() == null || order.getIdPesanan().isEmpty()) {
